@@ -2,8 +2,8 @@
 class ClaudeAccount < Formula
   desc "Route Claude Code subscriptions per project path (macOS)"
   homepage "https://github.com/reddeer-tech/claude-account"
-  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.0.25/claude-account-1.0.25.tar.gz"
-  sha256 "a21f4f2de1f758719e256ee6c9737da6dcaf080e3988c4b2e89d056995e6c7c4"
+  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.0.26/claude-account-1.0.26.tar.gz"
+  sha256 "191056435963152a38f454b4b38cb0ab838dd69afc21711dd44e26eb66003858"
   license "MIT"
   depends_on :macos
 
@@ -16,6 +16,7 @@ class ClaudeAccount < Formula
     # before the user has opted in. `claude-account setup` links them on request.
     (libexec/"shims").install "bin/claude-shim", "bin/claude-vscode-wrapper"
     pkgshare.install "templates"
+    pkgshare.install "vscode-status"
   end
 
   def caveats
