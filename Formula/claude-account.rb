@@ -2,8 +2,8 @@
 class ClaudeAccount < Formula
   desc "Route Claude Code subscriptions per project path (macOS)"
   homepage "https://github.com/reddeer-tech/claude-account"
-  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.0.24/claude-account-1.0.24.tar.gz"
-  sha256 "9fe92edb6ff7b57f8a17c83cd1fe580a5afaaadcf0b63d4e9cdc8e92e91ac1d2"
+  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.0.25/claude-account-1.0.25.tar.gz"
+  sha256 "a21f4f2de1f758719e256ee6c9737da6dcaf080e3988c4b2e89d056995e6c7c4"
   license "MIT"
   depends_on :macos
 
