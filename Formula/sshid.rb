@@ -2,8 +2,8 @@
 class Sshid < Formula
   desc "Route SSH keys and gh accounts per repository (macOS)"
   homepage "https://github.com/reddeer-tech/sshid"
-  url "https://github.com/reddeer-tech/sshid/releases/download/v1.0.0/sshid-1.0.0.tar.gz"
-  sha256 "40f39add05aa761e9c31e0ba01605c2d0f8076449e6c4afcc6edd29af94f4cc1"
+  url "https://github.com/reddeer-tech/sshid/releases/download/v1.0.1/sshid-1.0.1.tar.gz"
+  sha256 "62469d7163f8b751603233732da9f61d6d7ca8f1aa540a2c740505c23074178e"
   license "MIT"
   depends_on :macos
 
