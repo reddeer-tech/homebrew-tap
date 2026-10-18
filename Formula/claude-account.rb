@@ -2,13 +2,14 @@
 class ClaudeAccount < Formula
   desc "Route Claude Code subscriptions per project path (macOS)"
   homepage "https://github.com/reddeer-tech/claude-account"
-  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.1.9/claude-account-1.1.9.tar.gz"
-  sha256 "c2e310d6b046be277a90cd8a839a2628e124d8bd67a85f52c61297140fb871be"
+  url "https://github.com/reddeer-tech/claude-account/releases/download/v1.2.0/claude-account-1.2.0.tar.gz"
+  sha256 "3f6a162da396a94b714f7f85931d7a62e6dfc042c0e2adec046948d3071fd04c"
   license "MIT"
   depends_on :macos
 
   def install
     libexec.install "libexec/resolve.sh"
+    libexec.install "libexec/ui.py"            # the full-screen view (1.2.0), found as bin/../libexec
     bin.install "bin/claude-account"
     bin.install "bin/claude-whoami"
     # The routing shims must be able to shadow the real `claude`, so they are NOT
